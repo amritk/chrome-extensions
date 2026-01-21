@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub PR Test Hider",
+  "version": "1.0.0",
+  "description": "Automatically mark test files as viewed in GitHub pull requests",
+  "permissions": [],
+  "host_permissions": [
+    "https://github.com/*/*/pull/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/pull/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

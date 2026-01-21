@@ -1,0 +1,20 @@
+{
+  "name": "github-pr-test-hider",
+  "version": "1.0.0",
+  "description": "Automatically mark test files as viewed in GitHub pull requests",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch --mode development",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "@vitest/ui": "^1.2.2",
+    "happy-dom": "^13.3.8",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vitest": "^1.2.2"
+  }
+}

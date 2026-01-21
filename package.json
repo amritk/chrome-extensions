@@ -1,0 +1,23 @@
+{
+  "name": "chrome-extensions-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo for Chrome extensions",
+  "scripts": {
+    "dev": "pnpm --filter \"./extensions/**\" dev",
+    "build": "pnpm --filter \"./extensions/**\" build",
+    "test": "pnpm --filter \"./extensions/**\" --filter \"./packages/**\" test",
+    "type-check": "pnpm --filter \"./extensions/**\" --filter \"./packages/**\" type-check"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "@types/node": "^20.11.16",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vitest": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
