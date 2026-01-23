@@ -34,22 +34,18 @@ export default defineConfig({
         );
         console.log('✓ Copied manifest.json to dist');
 
-        // Create placeholder icons
+        // Copy icon files
         const distDir = resolve(__dirname, 'dist');
         mkdirSync(distDir, { recursive: true });
 
-        // Note: In a real extension, you'd copy actual PNG files
-        // For now, we'll create empty placeholder files
         const iconSizes = [16, 48, 128];
         iconSizes.forEach(size => {
           const iconPath = resolve(distDir, `icon${size}.png`);
+          const sourcePath = resolve(__dirname, `public/icon${size}.png`);
           try {
-            copyFileSync(
-              resolve(__dirname, 'src/icon.png'),
-              iconPath
-            );
-          } catch {
-            // Icon doesn't exist, skip for now
+            copyFileSync(sourcePath, iconPath);
+            console.log(`✓ Copied icon${size}.png to dist`);
+          } catch (error) {
             console.log(`⚠ Icon${size}.png not found, skipping...`);
           }
         });

@@ -76,7 +76,50 @@ const DEFAULT_CONFIG: Config = {
 ## Architecture
 
 - **content.ts** - Main content script with core logic
-- **content.test.ts** - Comprehensive unit tests
+- **content.test.ts** - Comprehensive unit tests (17 tests, 100% coverage)
 - **manifest.json** - Chrome extension configuration
 - **vite.config.ts** - Build configuration
 - **vitest.config.ts** - Test configuration
+
+## Publishing to Chrome Web Store
+
+Ready to publish your extension? See our comprehensive guides:
+
+- **[PUBLISHING.md](./PUBLISHING.md)** - Complete step-by-step publishing guide
+- **[STORE_LISTING.md](./STORE_LISTING.md)** - Pre-written store listing content
+- **[SCREENSHOTS.md](./SCREENSHOTS.md)** - How to create screenshots and promo images
+- **[PRIVACY.md](./PRIVACY.md)** - Privacy policy (required for submission)
+
+### Quick Publishing Checklist
+
+- [x] Extension code complete
+- [x] Icons generated (16x16, 48x48, 128x128)
+- [x] Tests passing (17/17)
+- [x] Privacy policy written
+- [x] Store listing content prepared
+- [ ] Create 1-4 screenshots
+- [ ] Create promotional images (optional)
+- [ ] Register Chrome Web Store developer account ($5)
+- [ ] Update manifest with your author info
+- [ ] Build and zip extension
+- [ ] Submit for review
+
+See [PUBLISHING.md](./PUBLISHING.md) for detailed instructions.
+
+## Tech Stack
+
+- **TypeScript** - Type safety and better developer experience
+- **Vite** - Fast builds with hot module replacement
+- **Vitest** - Unit testing with Happy DOM
+- **Sharp** - Automated icon generation from SVG
+
+## Privacy
+
+This extension:
+- ✅ Does NOT collect any data
+- ✅ Does NOT track users
+- ✅ Does NOT use analytics
+- ✅ Runs entirely in your browser
+- ✅ Only accesses GitHub PR pages
+
+See [PRIVACY.md](./PRIVACY.md) for full privacy policy.

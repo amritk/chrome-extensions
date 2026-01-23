@@ -2,7 +2,9 @@
   "manifest_version": 3,
   "name": "GitHub PR Test Hider",
   "version": "1.0.0",
-  "description": "Automatically mark test files as viewed in GitHub pull requests",
+  "description": "Automatically mark test files as viewed in GitHub pull requests to reduce noise and focus on implementation code",
+  "author": "Your Name",
+  "homepage_url": "https://github.com/yourusername/chrome-extensions",
   "permissions": [],
   "host_permissions": [
     "https://github.com/*/*/pull/*"
@@ -18,5 +20,13 @@
     "16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_title": "GitHub PR Test Hider - Auto-hides test files in PR reviews"
   }
 }
