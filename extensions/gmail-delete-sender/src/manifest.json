@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Delete Sender",
+  "version": "1.0.0",
+  "description": "Right-click an email in Gmail to delete all emails from that sender in one click",
+  "permissions": [],
+  "host_permissions": [
+    "https://mail.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_title": "Gmail Delete Sender - Delete all emails from a sender in one click"
+  }
+}
