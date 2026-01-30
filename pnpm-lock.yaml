@@ -48,6 +48,30 @@ importers:
         specifier: ^1.2.2
         version: 1.6.1(@types/node@20.19.30)(@vitest/ui@1.6.1)(happy-dom@13.10.1)
 
+  extensions/gmail-delete-sender:
+    devDependencies:
+      '@types/chrome':
+        specifier: ^0.0.268
+        version: 0.0.268
+      '@vitest/ui':
+        specifier: ^1.2.2
+        version: 1.6.1(vitest@1.6.1)
+      happy-dom:
+        specifier: ^13.3.8
+        version: 13.10.1
+      sharp:
+        specifier: ^0.34.5
+        version: 0.34.5
+      typescript:
+        specifier: ^5.3.3
+        version: 5.9.3
+      vite:
+        specifier: ^5.0.12
+        version: 5.4.21(@types/node@20.19.30)
+      vitest:
+        specifier: ^1.2.2
+        version: 1.6.1(@types/node@20.19.30)(@vitest/ui@1.6.1)(happy-dom@13.10.1)
+
 packages:
 
   '@emnapi/runtime@1.8.1':
